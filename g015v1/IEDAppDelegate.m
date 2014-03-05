@@ -9,11 +9,24 @@
 #import "IEDAppDelegate.h"
 
 @implementation IEDAppDelegate
+//Google+ ClientID
+static NSString * const kClientID = @"423242894251-ps5750iuitssgs2b8giqb37jgf3oa5vb.apps.googleusercontent.com";
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    //Setup Parse ID
+    [Parse setApplicationId:@"7eh7Ct3qJ8tSn2Q9nZ0Oe0GmYGSXbK5pxYx4Mwen"
+                  clientKey:@"KpOeVFS5n2IDzvcS3kyIwS3jPnRPFG6ROd5kIhPC"];
+    //Initialise Facebook
+    [PFFacebookUtils initializeFacebook];
+    //Initialise Mixpanel
+//    [Mixpanel sharedInstanceWithToken:MIXPANEL_TOKEN];
+    
+    
+    
     return YES;
+
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

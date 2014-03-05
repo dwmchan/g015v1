@@ -1,5 +1,5 @@
 //
-//  IEDSecondViewController.h
+//  IEDHomeViewController.h
 //  g015v1
 //
 //  Created by Donald Chan on 5/03/2014.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface IEDSecondViewController : UIViewController
+@interface IEDHomeViewController : UIViewController
 
 @end
