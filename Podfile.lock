@@ -1,15 +1,21 @@
 PODS:
   - Facebook-iOS-SDK (3.12.0)
+  - Google-Maps-iOS-SDK (1.7.0)
+  - google-plus-ios-sdk (1.5.0)
   - Mixpanel (2.3.2)
   - Parse (1.2.18):
     - Facebook-iOS-SDK (~> 3.11)
 
 DEPENDENCIES:
+  - Google-Maps-iOS-SDK (~> 1.7)
+  - google-plus-ios-sdk (~> 1.5)
   - Mixpanel
   - Parse
 
 SPEC CHECKSUMS:
   Facebook-iOS-SDK: c09f7d80db5c48170ff834bc03ebe774c49d1f5b
+  Google-Maps-iOS-SDK: 08c003195d87b81ea2c8265eaa2724ac38ac21b7
+  google-plus-ios-sdk: 5bda2a87ec54320dc99a67c745a445bbdf22cc72
   Mixpanel: ddd79df92245a14d2b3064544d1e9ff037d8ac3a
   Parse: 6dd57f2af9f89dc6facc755cec4e96f8b739b1fb
 

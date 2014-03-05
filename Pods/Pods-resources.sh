@@ -42,6 +42,7 @@ install_resource()
   esac
 }
 install_resource "Facebook-iOS-SDK/src/FBUserSettingsViewResources.bundle"
+install_resource "Google-Maps-iOS-SDK/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle"
 install_resource "Mixpanel/Mixpanel/MPArrowLeft.png"
 install_resource "Mixpanel/Mixpanel/MPArrowLeft@2x.png"
 install_resource "Mixpanel/Mixpanel/MPArrowRight.png"
@@ -56,6 +57,7 @@ install_resource "Mixpanel/Mixpanel/MPLogo.png"
 install_resource "Mixpanel/Mixpanel/MPLogo@2x.png"
 install_resource "Mixpanel/Mixpanel/MPNotification.storyboard"
 install_resource "Mixpanel/Mixpanel/MPSurvey.storyboard"
+install_resource "google-plus-ios-sdk/google-plus-ios-sdk-1.5.0/GooglePlus.bundle"
 
 rsync -avr --copy-links --no-relative --exclude '*/.svn/*' --files-from="$RESOURCES_TO_COPY" / "${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
 if [[ "${ACTION}" == "install" ]]; then
