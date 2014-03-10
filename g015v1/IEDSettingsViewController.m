@@ -8,7 +8,8 @@
 
 #import "IEDSettingsViewController.h"
 
-@interface IEDSettingsViewController ()
+@interface IEDSettingsViewController () <UITextFieldDelegate>
+@property (strong, nonatomic) IBOutlet UITextField *currentHandicapTextField;
 
 @end
 
@@ -34,5 +35,15 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - Helper Methods
+
+-(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+{
+    NSUInteger newLength = [textField.text length] + [string length] - range.length;
+    return (newLength > 3) ? NO:YES;
+}
+
+
 
 @end
