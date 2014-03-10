@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		236D4DA099DB49D89A89CC90 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B8F6783FBB74FB78DCC970B /* libPods.a */; };
+		594EAE3918CB1DDA00E046BB /* IEDSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 594EAE3818CB1DDA00E046BB /* IEDSettingsViewController.m */; };
+		594EAE3C18CB1E1100E046BB /* IEDHistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 594EAE3B18CB1E1100E046BB /* IEDHistoryTableViewController.m */; };
 		59BD4E4C18C7E799001EBED3 /* IEDGolfRoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59BD4E4B18C7E799001EBED3 /* IEDGolfRoundViewController.m */; };
 		59F1F99218C6CD170081315E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59F1F99118C6CD170081315E /* Foundation.framework */; };
 		59F1F99418C6CD170081315E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59F1F99318C6CD170081315E /* CoreGraphics.framework */; };
@@ -37,6 +39,10 @@
 
 /* Begin PBXFileReference section */
 		4ECCC2A2312B46C38A245F09 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		594EAE3718CB1DDA00E046BB /* IEDSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEDSettingsViewController.h; sourceTree = "<group>"; };
+		594EAE3818CB1DDA00E046BB /* IEDSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEDSettingsViewController.m; sourceTree = "<group>"; };
+		594EAE3A18CB1E1100E046BB /* IEDHistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEDHistoryTableViewController.h; sourceTree = "<group>"; };
+		594EAE3B18CB1E1100E046BB /* IEDHistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEDHistoryTableViewController.m; sourceTree = "<group>"; };
 		59BD4E4A18C7E799001EBED3 /* IEDGolfRoundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEDGolfRoundViewController.h; sourceTree = "<group>"; };
 		59BD4E4B18C7E799001EBED3 /* IEDGolfRoundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEDGolfRoundViewController.m; sourceTree = "<group>"; };
 		59F1F98E18C6CD170081315E /* g015v1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = g015v1.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +92,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		594EAE3218CB1D8500E046BB /* History */ = {
+			isa = PBXGroup;
+			children = (
+				594EAE3A18CB1E1100E046BB /* IEDHistoryTableViewController.h */,
+				594EAE3B18CB1E1100E046BB /* IEDHistoryTableViewController.m */,
+			);
+			name = History;
+			sourceTree = "<group>";
+		};
+		594EAE3618CB1DB500E046BB /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				594EAE3718CB1DDA00E046BB /* IEDSettingsViewController.h */,
+				594EAE3818CB1DDA00E046BB /* IEDSettingsViewController.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
 		59BD4E4918C7E780001EBED3 /* Golf Round */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,8 +159,10 @@
 				59F1F9A318C6CD170081315E /* Main.storyboard */,
 				59FBBF6F18C74D2600F9FB5E /* Home */,
 				59BD4E4918C7E780001EBED3 /* Golf Round */,
-				59F1F9AC18C6CD170081315E /* Images.xcassets */,
+				594EAE3218CB1D8500E046BB /* History */,
+				594EAE3618CB1DB500E046BB /* Settings */,
 				59F1F99818C6CD170081315E /* Supporting Files */,
+				59F1F9AC18C6CD170081315E /* Images.xcassets */,
 			);
 			path = g015v1;
 			sourceTree = "<group>";
@@ -312,10 +338,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				594EAE3918CB1DDA00E046BB /* IEDSettingsViewController.m in Sources */,
 				59BD4E4C18C7E799001EBED3 /* IEDGolfRoundViewController.m in Sources */,
 				59F1F99E18C6CD170081315E /* main.m in Sources */,
 				59F1F9A218C6CD170081315E /* IEDAppDelegate.m in Sources */,
 				59FBBF7218C74D5000F9FB5E /* IEDHomeViewController.m in Sources */,
+				594EAE3C18CB1E1100E046BB /* IEDHistoryTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

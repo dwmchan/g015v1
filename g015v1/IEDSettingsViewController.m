@@ -1,20 +1,18 @@
 //
-//  IEDHomeViewController.m
+//  IEDSettingsViewController.m
 //  g015v1
 //
-//  Created by Donald Chan on 5/03/2014.
+//  Created by Donald Chan on 8/03/2014.
 //  Copyright (c) 2014 iEndeavour. All rights reserved.
 //
 
-#import "IEDHomeViewController.h"
+#import "IEDSettingsViewController.h"
 
-
-
-@interface IEDHomeViewController ()
+@interface IEDSettingsViewController ()
 
 @end
 
-@implementation IEDHomeViewController
+@implementation IEDSettingsViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

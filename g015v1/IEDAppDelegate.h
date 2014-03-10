@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+@class AMSlideOutNavigationController;
 
 @interface IEDAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
+@property (strong, nonatomic) AMSlideOutNavigationController*	slideoutController;
 @end
