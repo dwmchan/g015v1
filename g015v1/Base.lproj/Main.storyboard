@@ -157,6 +157,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="vul-tr-H1f"/>
+                    <connections>
+                        <outlet property="averagePuttsPerRoundLabel" destination="kjC-hN-T0B" id="dOP-Op-Pq0"/>
+                        <outlet property="drivingAccuracyLabel" destination="fYJ-a8-X0e" id="qmW-Wg-RQ5"/>
+                        <outlet property="drivingDistanceLabel" destination="ItY-pd-wW4" id="Qvy-6a-G1J"/>
+                        <outlet property="greensInRegulationLabel" destination="OOs-0V-hmk" id="Z3k-FY-agh"/>
+                        <outlet property="handicapLabel" destination="imF-or-C66" id="PNo-LW-VPx"/>
+                        <outlet property="puttsPerGirLabel" destination="Yor-ai-Tnb" id="EhL-oL-mhX"/>
+                        <outlet property="strokeAverageLabel" destination="dDd-ID-hUp" id="3jp-SE-wQW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PW8-XW-nWT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

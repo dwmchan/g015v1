@@ -11,6 +11,13 @@
 
 
 @interface IEDHomeViewController ()
+@property (strong, nonatomic) IBOutlet UILabel *handicapLabel;
+@property (strong, nonatomic) IBOutlet UILabel *strokeAverageLabel;
+@property (strong, nonatomic) IBOutlet UILabel *drivingAccuracyLabel;
+@property (strong, nonatomic) IBOutlet UILabel *drivingDistanceLabel;
+@property (strong, nonatomic) IBOutlet UILabel *greensInRegulationLabel;
+@property (strong, nonatomic) IBOutlet UILabel *averagePuttsPerRoundLabel;
+@property (strong, nonatomic) IBOutlet UILabel *puttsPerGirLabel;
 
 @end
 
